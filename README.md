@@ -39,7 +39,7 @@ The tree used in the demo (heuristic values in brackets):
   F(6)
 ```
 
-Best-first expands B before C because B's heuristic is lower. It then expands D before E, and only reaches C once that whole branch has better candidates exhausted.
+Best-first expands B before C because B's heuristic is lower, then D (1) and E (3), which both beat C (4). F is expanded last because its heuristic (6) is the worst, even though it was discovered before C was expanded.
 
 ## Usage
 
